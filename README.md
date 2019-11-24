@@ -22,6 +22,14 @@ SELINUX | If "semanage" not available |>yum -y install policycoreutils-python
 SELINUX | Get all file contexts and all ports |>semanage fcontext -l ||semanage port -l
 ```
 
-1st question: "DNS | Path for unbound configuration"<br>
-1st answer: "See ||/etc/unbound/unbound.conf"
+1st question: 
+```
+DNS | Path for unbound configuration
+```
+
+1st answer: 
+```
+See 
+/etc/unbound/unbound.conf
+```
 
