@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"flag"
 	"fmt"
 	"math/rand"
 	"os"
@@ -25,9 +26,11 @@ func LinesInFile(fileName string) []string {
 
 func main() {
 
-	//  file := "test.txt"
-	file := "rhce.txt"
 	splitter := "|>"
+
+	args := flag.String("f", "test.txt", "test file")
+	flag.Parse()
+	file := *args
 
 	lines := LinesInFile(file)
 	count := len(lines)
@@ -40,7 +43,7 @@ func main() {
 		question := strings.Replace(line[0], "||", "\n", -1)
 		answer := strings.Replace(line[1], "||", "\n", -1)
 		//fmt.Println("")
-    fmt.Print("\033[H\033[2J")
+		fmt.Print("\033[H\033[2J")
 		fmt.Println(question)
 		bufio.NewReader(os.Stdin).ReadBytes('\n')
 		fmt.Println("----------")
