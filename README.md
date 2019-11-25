@@ -1,6 +1,6 @@
 # gtest
 
-Simple test tool. 
+**Simple test tool**. 
 You could make your list of questions for testing, that do self-test on any topic.
 
 # Usage
