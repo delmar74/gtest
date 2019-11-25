@@ -26,7 +26,7 @@ func main() {
 	splitter := "|>"
 	linebreak := "||"
 
-	args := flag.String("f", "test.txt", "test file")
+	args := flag.String("f", "test.qst", "test file")
 	flag.Parse()
 	file := *args
 

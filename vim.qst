@@ -1,0 +1,16 @@
+MOVE | begin of file |>gg
+MOVE | end of file |>G
+MOVE | begin of line |>0
+MOVE | end of line |>$
+MOVE | word _> |>W
+MOVE | word <_ |>B
+COPY | copy line |>yy
+COPY | cut line |>dd
+FIND | find word _> |>*
+FIND | find word <_ |>#
+DELETE | delete word _> |>dw
+DELETE | delete word <_ |>db
+DELETE | delete string _> |>dt[space]
+DELETE | delete string <_ |>daW
+DELETE | delete line _> |>d$
+DELETE | delete line <_ |>d^
