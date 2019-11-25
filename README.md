@@ -9,28 +9,34 @@ You could make your list of questions for testing, that do self-test on any topi
 gtest -f testfile
 ```
 
-# Example test file 
+# Test file
+
+## Format
 
 - `|>` - separator for question and answer
 - `||` - line break
 - `|` - regular character
 
-#### testfile: 
+
+## Example test file 
 
 ```
-DNS | Path for unbound configuration |>See ||/etc/unbound/unbound.conf
-SELINUX | If "semanage" not available |>yum -y install policycoreutils-python
-SELINUX | Get all file contexts and all ports |>semanage fcontext -l ||semanage port -l
+The capital of Greece |>Athens
+The capital of Sweden |>Stockholm
+The capital of New Zealand |>Wellington
+The highest mountain in the world |>Mount Everest (Sagarmatha/Chomolungma), 8848m
+The deepest lake in the world |>Lake Baikal, 1642m
+The highest mountain in Africa |>Mount Kilimanjaro, 5895m
+The highest mountain in Europe |>Mount Elbrus, 5642m
 ```
 
 1st question: 
 ```
-DNS | Path for unbound configuration
+The capital of Greece
 ```
 
 1st answer: 
 ```
-See 
-/etc/unbound/unbound.conf
+Athens
 ```
 
