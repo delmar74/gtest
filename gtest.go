@@ -24,7 +24,7 @@ func LinesInFile(fileName string) []string {
 func main() {
 
 	splitter := "|>"
-  linebreak := "||"
+	linebreak := "||"
 
 	args := flag.String("f", "test.txt", "test file")
 	flag.Parse()
